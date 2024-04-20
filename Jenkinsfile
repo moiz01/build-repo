@@ -47,7 +47,9 @@ pipeline {
         }
         stage('Tests'){
             steps {
-                sh 'echo "mvn test"'
+                sh 'echo "system tests"'
+                sh 'echo "performance tests"'
+                sh 'echo "api tests"'
             }
             // script {
             //      junit '**/target/surefire-reports/*.xml'
